@@ -1,0 +1,158 @@
+Last month, Google claimed to have achieved quantum supremacy—the name given to the step of proving quantum computers can deliver something that a classical computer can't. That claim is disputed, and it may yet turn out that we need a better demonstration, but it still feels like a significant milestone.
+A surprise this year was the decline of interest in Virtual Reality, at least in the context of Smart-phone-based VR. Despite this we still think that something in the AR/VR space, or some other form of alternative computer/human interaction, is likely to come on the market in the next few years and gain significant traction.
+We expect to see the interest in Web Assembly continue and hope that the tooling for it will start to mature.
+In our DevOps and Cloud trend report, we noted that Kubernetes has effectively cornered the market for container orchestration, and is arguably becoming the cloud-agnostic compute abstraction. The next "hot topics" in this space appear to be "service meshes" and developer experience/workflow tooling.  
+We’re looking forward to seeing what the open source community and vendors are working on in the understandability, observability, and debuggability space in the context of architectural patterns such microservices and functions(as-a-service).
+ 
+Looking back, 2019 saw some significant announcements in Quantum computing. In May, IBM published a paper in Nature that suggested they may have found a path to dealing with decoherence in current quantum computers. Writing for InfoQ Sergio De Simone pointed out:
+
+"The main issue with decoherence is the fast decay of a wave function, which has the undesirable effect of generating noise and errors after a very short time period. The paper proposes two approaches, one called probabilistic error correction and the other zero noise extrapolation, to keep decoherence under control."
+
+In September, Google announced, also via a paper in Nature, it had built a machine that achieved quantum supremacy - the point at which a quantum computer can solve problems which classical computers practically cannot. The claim was disputed by IBM, and the practical application of Google’s achievement is still limited, but both these announcements demonstrate real progress in the field.
+
+Also significant - the news that Microsoft open-sourced Q#, its Language for Quantum Computing.  
+
+A surprise this year was the decline of interest in Virtual Reality, at least in the context of Smart-phone-based VR. Sergio notes:
+
+"Google's decision to stop supporting its Daydream VR headset seemingly marks the end of phone-based virtual reality, a vision that attempted to combine the use of smartphones with 'dumb' VR headsets to bring VR experiences to the masses. Google's decision is accompanied by the BBC disbanding its VR content team after two years of successful experimentation."
+
+Development
+
+Java
+JavaScript, Java, and C# remain the most popular languages we cover, but we’re also seeing strong interest in Rust, Swift, and Go, and our podcast with Bryan Cantrill on "Rust and Why He Feels It’s The Biggest Change In Systems Development in His Career" is one of the top-performing podcasts we’ve published this year. We’ve also seen a growing interest in Python this year, probably fuelled by its popularity for machine learning tasks.
+
+After a rather turbulent 2018, Java seems to be settling into its bi-annual release cycle. According to our most-recent reader survey Java is the most used language amongst InfoQ readers, and there continues to be a huge amount of interest in the newer language features and how the language is evolving. We also continue to see strong and growing interest in Kotlin.  
+
+It has been interesting to see Microsoft’s growing involvement in Java, joining the OpenJDK, acquiring JClarity, and hiring other well known figures including Monica Beckwith.
+
+Our podcast with Rod Johnson in which he chats about the early days of the Spring Framework, Languages Post-Java, & Rethinking CI/CD was another of our top-performing podcasts this year.
+
+Matt Raible’s JHipster book, now in its 5th version, was one of our most-downloaded books of the year.
+
+In the Java programming language trends report, we noted increased adoption of non-HotSpot JVMs, and we believe OpenJ9 is now within the early-adopter stage. As the time we noted that:
+
+"We believe that the increasing adoption of cloud technologies within all types of organisation is driving the requirements for JREs that embrace associated "cloud-native" principles such as fast start-up times and a low memory footprint. Graal in itself may not be overly interesting, but the ability to compile Java application to native binaries, in combination with the support of polyglot languages, is ensuring that we keep a close watch on this project."
+
+Since the report came out, we feel that the GraalVM has demonstrated significant potential, and will continue to watch its progress with interest.  
+
+Our top performing content for Java this year included:
+
+Upgrading from Java 8 to Java 12 by Trisha Gee
+Why Continuations are Coming to Java by Ron Pressler
+The Complete Guide to the Java SE 12 Extended Switch Statement/Expression by Mohamed Taman
+Kotlin: Write Once, Run (Actually) Everywhere by Jake Wharton
+A First Look at Java Inline Classes by Ben Evans
+Although it didn’t quite make it in the top five list, an honourable mention should go to Brian Goetz’s fantastic "Java Feature Spotlight" article "Local Variable Type Inference."
+
+
+
+.NET
+The release of .NET Core 3 in September generated a huge buzz on InfoQ and produced some of our most-popular .NET content of the year. WebAssembly has been another area of intense interest, and we saw a corresponding surge in interest for Blazor, a new framework in ASP.NET Core that allows developers to create interactive web applications using C# and HTML. Blazor comes in multiple editions, including Blazor WebAssembly which allows single-page applications to run in the client's web browser using a WebAssembly-based .NET runtime.
+
+According to our most-recent reader survey, C# is the second-most widely used language among InfoQ readers after Java, and interest in C#8 in particular was also strong.
+
+Our top performing .NET content included:
+
+Goodbye Client Side JavaScript, Hello C#'s Blazor by Ed Charbeneau
+Single Page Applications and ASP.NET Core 3.0 by Shawn Wildermuth
+.NET Core: Past, Present, and Future by Arthur Casals
+Blazor: Client-Side Web UI with .NET Core 3.0 by Arthur Casals
+C# 8: Type Inference for the New Keyword by Jonathan Allen
+Jonathan Allen’s piece in the list is part of an excellent series of articles and news posts that Jonathan Allen wrote for InfoQ during 2019. Others included:
+
+Using C# 8 and Nullable Reference Types in .NET Framework
+Adapting Projects to Use C# 8 and Nullable Reference Types
+C# 8: Generic Attributes
+C# 8: Caller Expression Attribute for Assertions and Automated Testing
+C# 8 More Small Features
+
+Web Development
+Unsurprisingly, the majority of InfoQ readers write at least some JavaScript - around 70% according to the most recent reader survey - making it the most widely used language among our readers. The dominant JavaScript frameworks for InfoQ readers seem to currently be Vue and React. We also saw interest in using Javascript for machine learning via TensorFlow.js.  Away from JavaScript, we saw strong interest in some of the transpiler options. In addition to Blazor, mentioned above, we saw strong interest in Web Assembly, Typescript, Elm and Svelte.
+
+Top-performing content included:
+
+Using TypeScript with the MySQL Database by Deepak Vohra
+Google Earth Ported to Browsers with WebAssembly by Bruno Couriol
+Vue 2 vs. Vue 3: James Stewart at Vue Glasgow Meetup by Bruno Couriol
+Largest Transport Provider in Norway Rewrites Its Website with 83,000 Lines of Elm by Bruno Couriol
+How We Reduced Our React App Load Time by 60% by Ilango Rajagopal
+
+
+Architecture
+It’s unsurprising that distributed computing, and in particular the microservices architecture style, remains a huge part of our news and feature content. We see strong interest in related topics, with our original Domain Driven Design Quickly book, and our more-recent eMag "Domain-Driven Design in Practice" continuing to perform particularly well, and interest in topics like observability and distributed tracing. We also saw interest in methods of testing distributed systems, including a strong performance from our Chaos Engineering eMag, and a resurgence in reader interest in some for the core architectural topics such as API design, diagrams, patterns, and models.  
+
+Our top performing architecture content was:
+
+Why Do We Need Architectural Diagrams? by Ionut Balosin
+Our three part series on "Testing Microservices" by Wojciech Bulaty and Liam Williams (part 1, part 2, part 3).
+Reducing Microservices Architecture Complexity with Istio and Kubernetes by Ray Tsang
+Netflix Play API: Building an Evolutionary Architecture by Daniel Bryant
+Kubernetes Workloads in the Serverless Era: Architecture, Platforms, and Trends by Bilgin Ibryam
+
+
+AI, ML and Data Engineering
+Our podcast with Grady Booch on today’s Artificial Intelligence reality and what it means for developers was one of our most popular podcasts of the year, and revealed strong interest in the topic from InfoQ readers.
+
+Key AI stories in 2019 were MIT introducing GEN, a Julia-basd language for artificial intelligence, Google’s ongoing work on ML Kit, and discussions around conversational interfaces, as well as more established topics such as streaming.
+
+It’s slightly orthogonal to the rest of the pieces listed here, but we should also mention "Postgres Handles More Than You Think" by Jason Skowronski which performed amazingly well.
+
+Our top-performing content for AI and ML was:
+
+Google Announces TensorFlow Graphics Library for Unsupervised Deep Learning of Computer Vision Model by Anthony Alford
+Google Launches AI Platform - an End-to-End Platform to Build, Run, and Manage ML Projects by Abhishek Kaushik
+Algorithms behind Modern Storage Systems by Alex Petrov
+Real-Time Data Processing Using Redis Streams and Apache Spark Structured Streaming by Roshan Kumar
+Fraud Detection Using Random Forest, Neural Autoencoder, and Isolation Forest Techniques by Kathrin Melcher and Rosaria Silipo
+
+Culture and Methods
+If there was an overarching theme to our culture and methods coverage this year it might best be summed up as "agile done wrong" and many of our items focused on issues with agile, and/or going back to the principles outlined in the Agile Manifesto.
+
+We also saw continued in interest in some of the big agile methodologies, notably Scrum, with both "Scrum and XP from the Trenches", and "Kanban and Scrum - Making the Most of Both" performing well in our books department.
+
+We also saw strong reader interest in remote working with Judy Rees’ eMag on "Mastering Remote Meetings", and her corresponding podcast, performing well, alongside my own talk on "Working Remotely and Managing Remote Teams" from Aginext this year. 
+
+Our most popular published content for Culture and Methods was:
+
+Maybe Agile Is the Problem by Mo Hagar
+How to Slow Down to Go Faster Than Ever in Software Development by Lemi Orhan Ergin
+The Death of Agile and Beyond by Mynul Chowdhuri
+Simplicity, Please - A Manifesto for Software Development by Paul Merlyn
+Minibook: Understanding Agile Values & Principles. An Examination of the Agile Manifesto by Scott Duncan
+Our top performing culture podcasts were:
+
+Lynne Cazaly on Embracing "ish" and The Dangers of Perfectionism
+Ivar Jacobson on the Essence of Software
+Jeff DeLuca on FDD and Transforming Large Organisations to Product Thinking
+Jeremy Kriegel on Design Innovation and Doc Norton on why "Tuckman was Wrong"
+Deborah Hartmann Preuss on Creating Joyful Workplaces
+
+DevOps and Cloud
+In our DevOps and Cloud trends report, we noted that Kubernetes has effectively cornered the market for container orchestration, and is arguably becoming the cloud-agnostic compute abstraction. The next "hot topics" in this space appear to be "service meshes" and developer experience/workflow tooling. We continue to see strong interest in all of thee among InfoQ’s readers.
+
+A trend we’re also starting to note is a number of languages which are either infrastructure or cloud-orientated. In our Programming Languages trends report, we noted increased interest and innovation related to infrastructure-aware or cloud-specific languages, DSLs, and SDKs like Ballerina and Pulumi. In this context we should also mention Dark, a new language currently still in private beta, but already attracting a lot of interest. Somewhat related, we should also mention the Ecstasy language, co-created by Tangosol founders Cameron Purdy and Gene Gleyzer. Chris Swan, CTO for the Global Delivery at DXC Technology, spoke to Cameron Purdy about the language and the problems it’s designed to solve.
+
+In the eMags department "Kubernetes: Past, Present and Future", and "DevSecOps in Practice" were among our top performers:
+
+How Airbnb Simplified the Kubernetes Workflow for 1000+ Engineers by Manuel Pais
+Containers in 2019: They're Calling it a [Hypervisor] Comeback by Phil Estes
+Google Releases Anthos, a Hybrid Cloud Platform, to General Availability by Steef-Jan Wiggers
+Kubernetes Workloads in the Serverless Era: Architecture, Platforms, and Trends by Bilgin Ibryam
+AWS Cloud Development Kit (CDK) Is Generally Available, Enhancing Coding Cloud Infrastructure by Steef-Jan Wiggers
+
+Software Predictions for 2020
+Making predictions in software in notoriously hard to do, but we expect to see enterprise development teams consolidate their cloud-platform choices as Kubernetes adoption continues. Mostly this will be focussed on the "big five" cloud providers - Amazon, Google, IBM (plus Red Hat), Microsoft, and VMware (plus Pivotal). We think that, outside China, Alibaba will struggle to gain traction, as will Oracle, Salesforce, and SAP.
+
+In the platform/operations space we’re expecting that service meshes will become more integrated with the underlying orchestration frameworks (e.g. Kubernetes). We’re also hopeful that the developer workflow for interacting with service meshes becomes more integrated with current workflows, technologies, and pipelines.
+
+Ultimately developers should be able to control deploy, release, and debugging via the same continuous/progressive delivery pipeline. For example, using a "GitOps" style pipeline to deploy a service by configuring k8s YAML (or some higher-level abstraction), controlling the release of the new functionality using techniques like canarying or shadowing via the configuration of some traffic management k8s custom resource definition (CRD) YAML, and enabling additional logging or debug tooling via some additional CRD config.
+
+In regards to architecture, next year will hopefully be the year of "managing complexity". Architectural patterns such microservices and functions(as-a-service) have enabled developers to better separate concerns, implement variable rates of change via independent isolated deployments, and ultimately work more effectively at scale. However, our ability to comprehend the complex distributed systems we are now building -- along with the availability of related tooling -- has not kept pace with these developments. We’re looking forward to seeing what the open source community and vendors are working on in the understandability, observability, and debuggability space.
+
+We expect to see more developers experimenting with "low code" platforms. This is partly fueled by a renewed push from Microsoft for its PowerApps, Flow, Power BI, and Power Platform products.
+
+In the .NET ecosystem, we believe that Blazor will keep gaining momentum among web developers. .NET 5 should also bring significant changes to the ecosystem with the promised interoperability with Java, Objective-C, and Swift. Although it is early to say, Microsoft's recent efforts on IoT and AI (with ML.NET) should also help to raise the interest in .NET development.  Related we expect to see the interest in Web Assembly continue and hope that the tooling hear will start to mature.
+
+Despite the negative news around VR this year, we still think that something in the AR/VR space, or some other form of alternative computer/human interaction, is likely to come on the market in the next few years and gain significant traction, though it does seem that the form factor for this hasn’t really arrived.
+
+This article is part of our 2019/2020 trends overview. The insights come from our editorial team, all of whom are software engineers, who push the barrier of innovation in their professional lives. Read and reflect on their insights to inspire your tech visions and roadmap for 2020.
